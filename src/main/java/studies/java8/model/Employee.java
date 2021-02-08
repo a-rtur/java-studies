@@ -1,6 +1,6 @@
 package studies.java8.model;
 
-import studies.java8.features.default_methods.DefaultMethods;
+import studies.java8.features.DefaultMethods;
 
 public class Employee implements DefaultMethods {
 	String name;

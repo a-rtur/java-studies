@@ -1,4 +1,4 @@
-package studies.java8.features.functional_interfaces;
+package studies.java8.features;
 
 @FunctionalInterface
 public interface FunctionalInterfaces {

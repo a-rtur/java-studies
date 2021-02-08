@@ -1,6 +1,6 @@
 package studies.java8.model;
 
-import studies.java8.features.functional_interfaces.FunctionalInterfaces;
+import studies.java8.features.FunctionalInterfaces;
 
 public class Client implements FunctionalInterfaces {
 	String name;

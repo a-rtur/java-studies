@@ -1,4 +1,4 @@
-package studies.java8.features.default_methods;
+package studies.java8.features;
 
 public interface DefaultMethods {
 	default public boolean isValidEmployee(String código) {
