@@ -36,8 +36,6 @@ public class OpenCVMultipleFrameConverter {
 				}
 				
 				video.release();
-			} else {
-				System.out.println("[ERROR] Could not open file: " + file.getParent() + File.separator + file.getName());
 			}
 		}
 		
