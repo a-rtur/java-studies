@@ -1,8 +1,8 @@
 package studies.java8.model;
 
-import studies.java8.features.FunctionalInterfaces;
+import studies.java8.features.Java8FunctionalInterfaces;
 
-public class Client implements FunctionalInterfaces {
+public class Java8ClientModel implements Java8FunctionalInterfaces {
 	String name;
 	String username;
 	String password;

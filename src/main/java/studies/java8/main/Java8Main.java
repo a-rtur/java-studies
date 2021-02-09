@@ -4,15 +4,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
-import studies.java8.model.Client;
-import studies.java8.model.Employee;
+import studies.java8.model.Java8ClientModel;
+import studies.java8.model.Jaba8EmployeeModel;
 
 public class Java8Main {
 	public static void main(String[] args) {
 		
 		/* Interface Funcional */
 		/* Client está implementando uma interface funcional. Uma interface funcional é uma interface que só pode ter um método abstrato. */
-		Client c = new Client();
+		Java8ClientModel c = new Java8ClientModel();
 		c.setName("Artur");
 		c.setUsername("Username");
 		c.setPassword("Password");
@@ -20,28 +20,28 @@ public class Java8Main {
 		
 		/* Métodos Padrões */
 		/* Funcionário implementa uma interface com método padrão. O método isValidEmployee rodando é o default, neste caso. */
-		Employee f = new Employee();
+		Jaba8EmployeeModel f = new Jaba8EmployeeModel();
 		f.setName("Ana");
 		f.setCode("AFSW19");
 		f.isValidEmployee(f.getCode());
 
 		/* Classes anônimas */
 		/* A forma convencional seria criar uma classe implementando Consumer<Client> e fazer a implementação do accept nela. */
-		Consumer<Client> consumer = new Consumer<Client>() {
-			public void accept(Client t) {
+		Consumer<Java8ClientModel> consumer = new Consumer<Java8ClientModel>() {
+			public void accept(Java8ClientModel t) {
 				System.out.println("Nome do Cliente: " + c.getName());
 			}
 		};
-		List<Client> clientes = Arrays.asList(c);
+		List<Java8ClientModel> clientes = Arrays.asList(c);
 		clientes.forEach(consumer);
 		
 		/* Referência ao método */
 		/* É possível referenciar um método de uma instância da seguinte forma */
-		clientes.forEach(Client::printName);
+		clientes.forEach(Java8ClientModel::printName);
 		
 		/* Expressões Lambda */
 		/* Faz a mesma coisa que uma estrutura de repetição. */
-		clientes.forEach((Client k) -> {
+		clientes.forEach((Java8ClientModel k) -> {
 			System.out.println("Nome do Cliente: " + k.getName());
 		});
 		

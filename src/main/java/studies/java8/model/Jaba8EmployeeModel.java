@@ -1,8 +1,8 @@
 package studies.java8.model;
 
-import studies.java8.features.DefaultMethods;
+import studies.java8.features.Java8DefaultMethods;
 
-public class Employee implements DefaultMethods {
+public class Jaba8EmployeeModel implements Java8DefaultMethods {
 	String name;
 	String code;
 	
